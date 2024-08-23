@@ -1,27 +1,27 @@
-# ᑭᖇOᖴᗴՏՏOᖇ ᗰᑌՏIᑕ 
-➥ 𝖧ᴇʀᴏᴋᴜ 𝖭ᴇᴡ 𝖤ʀʀᴏʀ 𝖥ɪxᴇᴅ 𝖱ᴇᴘᴏ 𝖣ᴇᴘʟᴏʏ 𝖭ᴏᴡ ✔️ 
+# 🥀 𝐑𝐈𝐃𝐈 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓 🌷
+➥ 𝖧ᴇʀᴏᴋᴜ 𝖭ᴇᴡ 𝖤ʀʀᴏʀ 𝖥ɪ𝐱ᴇᴅ ✔️ 
  ➥ 𝖥ɪʀsᴛ 𝖥ᴏʀᴋ 𝖳ʜɪs 𝖱ᴇʀᴏ 𝖠ɴᴅ 𝖦ɪᴠᴇ ᴀ 𝖲ᴛᴀʀ ⭐
   ➥ 𝖳ʜᴇɴ ʜᴏsᴛ ᴏɴ ʜᴇʀᴋᴏᴜ 👨🏻‍💻
 <h1 align="center"
  
-### Pʀᴏғᴇssᴏʀ Oᴘ
+### 𝘿𝙀𝙎𝙏𝙍𝙊𝙔𝙀𝙍 𝙊𝙋 ⚡
 <h1 align="center"
   
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<img src="https://readme-typing-svg.herokuapp.com?color=FF0085&width=620&lines=🍁+🚩+𝗣𝗢𝗪𝗘𝗥𝗘𝗗+𝗕𝗬+𝗣𝗥𝗢𝗙𝗘𝗦𝗦𝗢𝗥+🚩+🍁"></b></h3>
+<img src="https://readme-typing-svg.herokuapp.com?color=FF0085&width=620&lines=🍁+🚩+𝗣𝗢𝗪𝗘𝗥𝗘𝗗+𝗕𝗬+𝘿𝙀𝙎𝙏𝙍𝙊𝙔𝙀𝙍+🚩+🍁"></b></h3>
  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<h1 align="center"><b>Pʀᴏғᴇssᴏʀ Mᴜsɪᴄ Bᴏᴛ</b></h1>
-<p align="center"><a href="https://PROFESSOR_77X"><img src="https://telegra.ph/file/be184bcba0b8ce74b00b8.jpg" width="400"></a></p>
+<h1 align="center"><b>𝐑𝐈𝐃𝐈 Mᴜsɪᴄ Bᴏᴛ</b></h1>
+<p align="center"><a href="https://t.me/ll_destroyerr_ll"><img src="https://telegra.ph/file/17365df54ea493b54f62b.jpg" width="400"></a></p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Fakecheater77x&repo=PROFESSOR_MUSIC&theme=flag-india)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Destroyerofworld&repo=Destroyer_music&theme=flag-india)
 
-[![GIF](https://github.com/Fakecheater77x/PROFESSOR_MUSIC/blob/main/Fakecheater77x.gif)](https://github.com/PROFESSOR_MUSIC)
-   [![ALPHA](https://github-stats-alpha.vercel.app/api?username=Fakecheater77x "PROFESSOR")](https://github-stats-alpha.vercel.app/api?username=Fakecheater77x "PROFESSOR")
+[![GIF](https://github.com/Destroyerofworldd/Destroyer_music/blob/main/Destroyerofworld.gif)](https://github.com/Destroyer_music)
+   [![ALPHA](https://github-stats-alpha.vercel.app/api?username=Destroyerofworld "DESTROYER")](https://github-stats-alpha.vercel.app/api?username=Destroyerofworld "DESTROYER")
 
 
-GO TO [RELOAD.PY](https://github.com/Fakecheater77x/PROFESSOR_MUSIC/blob/main/PROFESSOR_MUSIC/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
+GO TO [RELOAD.PY](https://github.com/Destroyerofworldd/Destroyer_music/blob/main/Destroyer_music/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
 
 </p>
 ʀᴀᴜsʜᴀɴ
@@ -33,7 +33,7 @@ GO TO [RELOAD.PY](https://github.com/Fakecheater77x/PROFESSOR_MUSIC/blob/main/PR
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Fakecheater77x/PROFESSOR_MUSIC"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-green?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Destroyerofworldd/Destroyer_music"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-green?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)]mk(https://app.koyeb.com/deploy?type=git&repository=github.com/TEAMPURVI/PURVI_MUSIC&branch=main&name=purvibot)
 
