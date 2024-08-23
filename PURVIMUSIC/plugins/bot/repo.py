@@ -21,48 +21,16 @@ start_txt = """**
  
  ► ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ sᴇɴᴅ ɴᴜᴅᴇs ᴏғ ᴜʀ ᴍᴏᴛʜᴇʀ
 **"""
-
-
-
-
 @app.on_message(filters.command("repo"))
 async def start(_, msg):
-    buttons = [
-        [ 
-          InlineKeyboardButton("𝗔𝗗𝗗 𝗠𝗘", url=f"https://t.me/Ridi_music_bot?startgroup=true")
-        ],
-        [
-          InlineKeyboardButton("4𝙎𝙏 𝙊𝙋", url="https://t.me/+qYRBJgZsARpkNWJl"),
-          InlineKeyboardButton("⚡𝙐𝙍 𝘿𝘼𝘿𝘿𝙔⚡", url="https://t.me/ll_destroyerr_ll"),
-          ],
-               [
-                InlineKeyboardButton("ᴍᴀᴀᴀ ᴋɪ ᴄʜᴜᴛ", 
-
-                                    ),]
-[
-              InlineKeyboardButton("ʀᴀɴᴅɪ ", 
-              InlineKeyboardButton("︎ᴀᴜᴋᴀᴛʟᴇss",
-                                  ),]
-              [
-              InlineKeyboardButton("ғᴜᴄᴋᴋᴋ ᴜʜʜʜ ", 
-InlineKeyboardButton("ᴛᴇʀɪ ᴍᴜᴍᴍʏ sᴇxʏ ",
-                    ),]
-[
-InlineKeyboardButton("ʀᴀɴᴅᴅᴅ ᴋᴇ ᴘɪʟʟᴇᴇ", 
-InlineKeyboardButton(" ᴍᴀᴀ ᴋᴀ ɴᴜᴅᴇs ᴅᴇ ᴘʜʟᴇ", 
-                    ), 
-                ]]
-    reply_markup = InlineKeyboardMarkup(buttons)
+    
     
     await msg.reply_photo(
         photo="https://telegra.ph/file/17365df54ea493b54f62b.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
- 
-   
 # --------------
-
 
 @app.on_message(filters.command("repo", prefixes="."))
 @capture_err
@@ -78,7 +46,7 @@ async def repo(_, message):
             list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
             count += 1
 
-        text = f"""[ɢᴀᴀɴᴅᴜᴜ]() | [𝖦𝖱𝖮𝖴𝖯](https://t.me/thala_elclassico_07)
+        text = f"""[ɢᴀᴀɴᴅᴜᴜ] | [𝖦𝖱𝖮𝖴𝖯](https://t.me/thala_elclassico_07)
 | 𝖢𝖮𝖭𝖳𝖱𝖨𝖡𝖴𝖳𝖮𝖱𝖲 |
 ----------------
 {list_of_users}"""
