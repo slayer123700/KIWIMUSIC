@@ -21,22 +21,37 @@ start_txt = """**
  
  ► ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ sᴇɴᴅ ɴᴜᴅᴇs ᴏғ ᴜʀ ᴍᴏᴛʜᴇʀ
 **"""
+
+
+
+
 @app.on_message(filters.command("repo"))
 async def start(_, msg):
-    
-    
+             buttons = [
+        [ 
+          InlineKeyboardButton("𝗔𝗗𝗗 𝗠𝗘", url=f"https://t.me/Ridi_music_bot?startgroup=true")
+        ],
+        [
+          InlineKeyboardButton("𝗛𝗘𝗟𝗣", url="https://t.me/thala_elclassico_07"),
+          InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/ll_destroyerr_ll"),
+        ]]
+
+            reply_markup = InlineKeyboardMarkup(buttons)
+       
     await msg.reply_photo(
         photo="https://telegra.ph/file/17365df54ea493b54f62b.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
+
+
 # --------------
 
 @app.on_message(filters.command("repo", prefixes="."))
 @capture_err
 async def repo(_, message):
     async with httpx.AsyncClient() as client:
-        response = await client.get("xxx.ᴄᴏᴍ 😂😋💋")
+        response = await client.get("https//xxx.ᴄᴏᴍ 😂😋💋")
     
     if response.status_code == 200:
         users = response.json()
