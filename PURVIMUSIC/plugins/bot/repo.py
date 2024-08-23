@@ -17,9 +17,9 @@ start_txt = """**
  
  ➲ᴜɴʟɪᴍɪᴛᴇᴅ ᴄʜᴜᴅᴀɪɪɪ  ✰
  
- ➲  24x7 ᴛᴍʀʜɪ ᴏʀ ᴛᴍʀʜɪ ᴋʜᴀɴᴅᴀɴ ᴋɪ ᴄʜᴜᴅᴀɪ 😋 ✰
+ ➲ 24x7 ᴛᴍʀʜɪ ᴏʀ ᴛᴍʀʜɪ ᴋʜᴀɴᴅᴀɴ ᴋɪ ᴄʜᴜᴅᴀɪ 😋 ✰
  
- ► ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ sᴇɴᴅ ɴᴜᴅᴇs ᴏғ ᴜʀ ᴍᴏᴛʜᴇʀ
+ ► ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ sᴇɴᴅ ɴᴜᴅᴇs ᴏғ ᴜʀ ᴍᴏᴛʜᴇʀ👄
 **"""
 
 
@@ -36,22 +36,23 @@ async def start(_, msg):
           InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/ll_destroyerr_ll"),
         ]]
 
-            reply_markup = InlineKeyboardMarkup(buttons)
-       
+       reply_markup = InlineKeyboardMarkup(buttons)
+    
     await msg.reply_photo(
-        photo="https://telegra.ph/file/17365df54ea493b54f62b.jpg",
+        photo="https://telegra.ph/file/35a12649efa56b88a7854.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
-
-
+ 
+   
 # --------------
 
-@app.on_message(filters.command("repo", prefixes="."))
+
+@app.on_message(filters.command("repo", prefixes="≈"))
 @capture_err
 async def repo(_, message):
     async with httpx.AsyncClient() as client:
-        response = await client.get("https//xxx.ᴄᴏᴍ 😂😋💋")
+        response = await client.get("https://api.github.com/repos/Adithakur008/PURVI_MUSIC/contributors")
     
     if response.status_code == 200:
         users = response.json()
@@ -61,12 +62,10 @@ async def repo(_, message):
             list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
             count += 1
 
-        text = f"""[ɢᴀᴀɴᴅᴜᴜ] | [𝖦𝖱𝖮𝖴𝖯](https://t.me/thala_elclassico_07)
+        text = f"""[𝖱𝖤𝖯𝖮 𝖫𝖨𝖭𝖪](https://github.com/Adithakur008/PURVI_MUSIC) | [𝖦𝖱𝖮𝖴𝖯](https://t.me/thala_elclassico_07)
 | 𝖢𝖮𝖭𝖳𝖱𝖨𝖡𝖴𝖳𝖮𝖱𝖲 |
 ----------------
 {list_of_users}"""
         await app.send_message(message.chat.id, text=text, disable_web_page_preview=True)
     else:
         await app.send_message(message.chat.id, text="Failed to fetch contributors.")
-
-
