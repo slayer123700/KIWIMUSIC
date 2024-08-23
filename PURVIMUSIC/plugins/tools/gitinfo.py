@@ -2,7 +2,7 @@ import asyncio, os, time, aiohttp
 import aiohttp
 from pyrogram import filters
 from daxxhub import daxxhub as papadaxx
-from DESTROYER import app
+from PURVIMUSIC import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 ###
@@ -17,7 +17,7 @@ async def daxxhub(_, message):
 @app.on_message(filters.command(["github", "git"]))
 async def github(_, message):
     if len(message.command) != 2:
-        await message.reply_text("/git TEAMPURVI")
+        await message.reply_text("/git TERI MAA KI CHUT DE PHLEE 💋")
         return
 
     username = message.text.split(None, 1)[1]
