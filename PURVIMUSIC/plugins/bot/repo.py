@@ -50,8 +50,8 @@ InlineKeyboardButton("ᴛᴇʀɪ ᴍᴜᴍᴍʏ sᴇxʏ ",
 [
 InlineKeyboardButton("ʀᴀɴᴅᴅᴅ ᴋᴇ ᴘɪʟʟᴇᴇ", 
 InlineKeyboardButton(" ᴍᴀᴀ ᴋᴀ ɴᴜᴅᴇs ᴅᴇ ᴘʜʟᴇ", 
-                    ) ]
-    
+                    ), 
+ [   
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
