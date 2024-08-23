@@ -17,11 +17,11 @@
 
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Fakecheater77x&repo=PROFESSOR_MUSIC&theme=flag-india)
 
-[![GIF](https://github.com/Fakecheater77x/PROFESSOR_MUSIC/blob/main/TEAMPURVI.gif)](https://github.com/PROFESSOR_MUSIC)
-   [![ALPHA](https://github-stats-alpha.vercel.app/api?username=TEAMPURVI "RAUSHAN")](https://github-stats-alpha.vercel.app/api?username=TEAMPURVI "RAUSHAN")
+[![GIF](https://github.com/Fakecheater77x/PROFESSOR_MUSIC/blob/main/Fakecheater77x.gif)](https://github.com/PROFESSOR_MUSIC)
+   [![ALPHA](https://github-stats-alpha.vercel.app/api?username=Fakecheater77x "PROFESSOR")](https://github-stats-alpha.vercel.app/api?username=Fakecheater77x "PROFESSOR")
 
 
-GO TO [RELOAD.PY](https://github.com/Fakecheater77x/PROFESSOR_MUSIC/blob/main/PURVIMUSIC/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
+GO TO [RELOAD.PY](https://github.com/Fakecheater77x/PROFESSOR_MUSIC/blob/main/PROFESSOR_MUSIC/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
 
 </p>
 ʀᴀᴜsʜᴀɴ
