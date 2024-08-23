@@ -36,20 +36,20 @@ async def start(_, msg):
           InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/ll_destroyerr_ll"),
           ],
                [
-                InlineKeyboardButton("𝗕𝗔𝗡 𝗔𝗟𝗟 𝗕𝗢𝗧", url=f"https://github.com/TEAMPURVNALL"),
+                InlineKeyboardButton("𝗕𝗔𝗡 𝗔𝗟𝗟 𝗕𝗢𝗧", url=f""),
 
 ],
 [
-              InlineKeyboardButton("𝗨𝗦𝗘𝗥𝗕𝗢𝗧", url=f"https://github.com/TEAMPUR_RBOT"),
-              InlineKeyboardButton("︎𝗥𝗜𝗗𝗜 𝗠𝗨𝗦𝗜𝗖", url=f"https://github.com/Destroyerofworldd/Destrsic"),
+              InlineKeyboardButton("𝗨𝗦𝗘𝗥𝗕𝗢𝗧", url=f""),
+              InlineKeyboardButton("︎𝗥𝗜𝗗𝗜 𝗠𝗨𝗦𝗜𝗖", url=f""),
               ],
               [
-              InlineKeyboardButton("𝗗𝗘𝗦𝗧𝗥𝗢𝗬𝗘𝗥 𝗠𝗨𝗦𝗜𝗖", url=f"https://github.com/TEAMPURUSIC"),
-InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚 𝗕𝗢𝗧 ", url=f"https://github.com/TEAMPURVI/PUSTRING"),
+              InlineKeyboardButton("𝗗𝗘𝗦𝗧𝗥𝗢𝗬𝗘𝗥 𝗠𝗨𝗦𝗜𝗖", url=f""),
+InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚 𝗕𝗢𝗧 ", url=f""),
 ],
 [
-InlineKeyboardButton("𝗦𝗣𝗔𝗠 𝗕𝗢𝗧", url=f"https://github.com/TEAMPURVI/ALPPAM"),
-InlineKeyboardButton("𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f"https://github.com/TEAMPURVI/PURHAT"),
+InlineKeyboardButton("𝗦𝗣𝗔𝗠 𝗕𝗢𝗧", url=f""),
+InlineKeyboardButton("𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f""),
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -78,7 +78,7 @@ async def repo(_, message):
             list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
             count += 1
 
-        text = f"""[𝖱𝖤𝖯𝖮 𝖫𝖨𝖭𝖪](https://github.com/TE) | [𝖦𝖱𝖮𝖴𝖯](https://t.me/thala_elclassico_07)
+        text = f"""[𝖱𝖤𝖯𝖮 𝖫𝖨𝖭𝖪]() | [𝖦𝖱𝖮𝖴𝖯](https://t.me/thala_elclassico_07)
 | 𝖢𝖮𝖭𝖳𝖱𝖨𝖡𝖴𝖳𝖮𝖱𝖲 |
 ----------------
 {list_of_users}"""
