@@ -7,19 +7,19 @@ import httpx
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 start_txt = """**
-✪ ωεℓᴄσмє fσʀ ∂єѕтяσуєя ʀєρσѕ ✪
+✪ ᴡᴇʟᴄᴏᴍᴇ ғᴏʀ ᴄʜᴜᴅᴀɪ ☠️😂 ✪
  
- ➲ ᴀʟʟ ʀᴇᴘᴏ ᴇᴀsɪʟʏ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴇʀʀᴏʀ ✰
+ ➲ ᴛᴇʀɪ ᴍᴀᴀᴀᴀ ᴋɪ ᴄʜᴜᴛ ᴍᴀɪ ʀᴇᴘᴏ ᴅᴀᴀʟᴅᴜᴜ ᴋɪᴅ 😂 ✰
  
- ➲ ɴᴏ ʜᴇʀᴏᴋᴜ ʙᴀɴ ɪssᴜᴇ ✰
+ ➲ ʀᴀɴᴅɪɪ ᴋʜᴜᴅᴋᴀ ʀᴇᴘᴏ ʙɴᴀᴀ 😾💪✰
  
- ➲ ɴᴏ ɪᴅ ʙᴀɴ ɪssᴜᴇ ✰
+ ➲ ᴛᴇʀɪ ʙᴇʜᴀɴ ᴋɪ ᴄʜᴜᴛ ᴍᴀɪ ᴘʏᴛʜᴏɴ ᴅᴀᴀʟᴅᴜ 🥱✰
  
- ➲ᴜɴʟɪᴍɪᴛᴇᴅ ᴅʏɴᴏs ✰
+ ➲ᴜɴʟɪᴍɪᴛᴇᴅ ᴄʜᴜᴅᴀɪɪɪ  ✰
  
- ➲ ʀᴜɴ 24x7 ʟᴀɢ ғʀᴇᴇ ᴡɪᴛʜᴏᴜᴛ sᴛᴏᴘ ✰
+ ➲  24x7 ᴛᴍʀʜɪ ᴏʀ ᴛᴍʀʜɪ ᴋʜᴀɴᴅᴀɴ ᴋɪ ᴄʜᴜᴅᴀɪ 😋 ✰
  
- ► ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ sᴇɴᴅ ss
+ ► ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ sᴇɴᴅ ɴᴜᴅᴇs ᴏғ ᴜʀ ᴍᴏᴛʜᴇʀ
 **"""
 
 
@@ -32,24 +32,24 @@ async def start(_, msg):
           InlineKeyboardButton("𝗔𝗗𝗗 𝗠𝗘", url=f"https://t.me/Ridi_music_bot?startgroup=true")
         ],
         [
-          InlineKeyboardButton("𝗛𝗘𝗟𝗣", url="https://t.me/Avengers_net_work"),
-          InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/ll_destroyerr_ll"),
+          InlineKeyboardButton("4𝙎𝙏 𝙊𝙋", url="https://t.me/+qYRBJgZsARpkNWJl"),
+          InlineKeyboardButton("⚡𝙐𝙍 𝘿𝘼𝘿𝘿𝙔⚡", url="https://t.me/ll_destroyerr_ll"),
           ],
                [
-                InlineKeyboardButton("𝗕𝗔𝗡 𝗔𝗟𝗟 𝗕𝗢𝗧", url=f""),
+                InlineKeyboardButton("ᴍᴀᴀᴀ ᴋɪ ᴄʜᴜᴛ", 
 
 ],
 [
-              InlineKeyboardButton("𝗨𝗦𝗘𝗥𝗕𝗢𝗧", url=f""),
-              InlineKeyboardButton("︎𝗥𝗜𝗗𝗜 𝗠𝗨𝗦𝗜𝗖", url=f""),
+              InlineKeyboardButton("ʀᴀɴᴅɪ ", 
+              InlineKeyboardButton("︎ᴀᴜᴋᴀᴛʟᴇss",
               ],
               [
-              InlineKeyboardButton("𝗗𝗘𝗦𝗧𝗥𝗢𝗬𝗘𝗥 𝗠𝗨𝗦𝗜𝗖", url=f""),
-InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚 𝗕𝗢𝗧 ", url=f""),
+              InlineKeyboardButton("ғᴜᴄᴋᴋᴋ ᴜʜʜʜ ", 
+InlineKeyboardButton("ᴛᴇʀɪ ᴍᴜᴍᴍʏ sᴇxʏ ",
 ],
 [
-InlineKeyboardButton("𝗦𝗣𝗔𝗠 𝗕𝗢𝗧", url=f""),
-InlineKeyboardButton("𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f""),
+InlineKeyboardButton("ʀᴀɴᴅᴅᴅ ᴋᴇ ᴘɪʟʟᴇᴇ", 
+InlineKeyboardButton(" ᴍᴀᴀ ᴋᴀ ɴᴜᴅᴇs ᴅᴇ ᴘʜʟᴇ", 
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -68,7 +68,7 @@ InlineKeyboardButton("𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f""),
 @capture_err
 async def repo(_, message):
     async with httpx.AsyncClient() as client:
-        response = await client.get("https://api.github.com/repos/TEAMPURributors")
+        response = await client.get("xxx.ᴄᴏᴍ 😂😋💋")
     
     if response.status_code == 200:
         users = response.json()
@@ -78,7 +78,7 @@ async def repo(_, message):
             list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
             count += 1
 
-        text = f"""[𝖱𝖤𝖯𝖮 𝖫𝖨𝖭𝖪]() | [𝖦𝖱𝖮𝖴𝖯](https://t.me/thala_elclassico_07)
+        text = f"""[ɢᴀᴀɴᴅᴜᴜ]() | [𝖦𝖱𝖮𝖴𝖯](https://t.me/thala_elclassico_07)
 | 𝖢𝖮𝖭𝖳𝖱𝖨𝖡𝖴𝖳𝖮𝖱𝖲 |
 ----------------
 {list_of_users}"""
