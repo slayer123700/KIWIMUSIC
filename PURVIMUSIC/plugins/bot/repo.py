@@ -38,19 +38,19 @@ async def start(_, msg):
                [
                 InlineKeyboardButton("ᴍᴀᴀᴀ ᴋɪ ᴄʜᴜᴛ", 
 
-],
+                                    ),
 [
               InlineKeyboardButton("ʀᴀɴᴅɪ ", 
               InlineKeyboardButton("︎ᴀᴜᴋᴀᴛʟᴇss",
-              ],
+                                  ),
               [
               InlineKeyboardButton("ғᴜᴄᴋᴋᴋ ᴜʜʜʜ ", 
 InlineKeyboardButton("ᴛᴇʀɪ ᴍᴜᴍᴍʏ sᴇxʏ ",
-],
+                    ),
 [
 InlineKeyboardButton("ʀᴀɴᴅᴅᴅ ᴋᴇ ᴘɪʟʟᴇᴇ", 
 InlineKeyboardButton(" ᴍᴀᴀ ᴋᴀ ɴᴜᴅᴇs ᴅᴇ ᴘʜʟᴇ", 
-    ]]
+                    ) ) 
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
