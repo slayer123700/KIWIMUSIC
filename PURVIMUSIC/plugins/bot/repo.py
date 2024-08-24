@@ -1,22 +1,3 @@
-
-Navigation Menu
-
-Code
-Pull requests
-Actions
-BreadcrumbsPURVI_MUSIC/PURVIMUSIC/plugins/bot
-/repo.py
-Latest commit
-Adithakur008
-Adithakur008
-last month
-History
-89 lines (67 loc) · 3.24 KB
-File metadata and controls
-
-Code
-
-Blame
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from PURVIMUSIC import app
