@@ -6,21 +6,16 @@ from PURVIMUSIC.utils.errors import capture_err
 import httpx 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-start_txt = """**
-✪ ᴡᴇʟᴄᴏᴍᴇ ʀᴀɴᴅɪ ᴋᴇ ʙᴄʜᴇ ✪
+start_txt = """
+♡ 𝘞𝘌𝘓𝘊𝘖𝘔𝘌 𝘔𝘈𝘋𝘈𝘙𝘊𝘏𝘖𝘋𝘋 ♡
  
- ➲ ʀᴇᴘᴏ ᴋᴇ ʟɪʏᴇ ʙᴀᴀᴘ ʙᴏʟ 🤣
+➥𝘙𝘈𝘕𝘋𝘐 𝘒𝘌 𝘉𝘊𝘏𝘌𝘌 ☠︎︎
  
- ➲ ɢᴀɴᴅ ᴅᴇ ʀᴇᴘᴏ ᴅᴇᴅᴜɴɢᴀ 😘
+➥ 𝘛𝘌𝘙𝘐 𝘔𝘈𝘈𝘈 𝘒𝘐 𝘊𝘏𝘜𝘛 𝘒𝘐𝘋 ⍥⃝
  
- ➲ ʜᴛᴛ ᴛᴇʀɪ ᴍᴀᴀ ᴋɪ ᴄʜᴜᴛ 😍
+➥ 𝘎𝘈𝘕𝘋 𝘋𝘌 𝘛𝘉 𝘙𝘌𝘗𝘖 𝘋𝘜𝘕𝘎𝘈 ꈍᴗꈍ
  
- ➲ ɢᴀɴᴅ ʟᴇᴋᴇ ᴀᴘɴɪ ʙʜᴀᴀɢ ᴊᴀ 😁
- 
- ➲ 24*7 ᴄʜᴏᴅᴜɴɢᴀᴀ ʙʜᴀᴀɢ ᴊᴀᴀ 😮‍💨✰
- 
- ► ᴍᴜᴍᴍʏ ᴋᴇ ɴᴜᴅᴇs ʙʜᴊ ᴘʜʟᴇ 🌚
-**"""
+"""
 
 
 
@@ -29,28 +24,19 @@ start_txt = """**
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("🌷ＡＤＤ ＭＥ🌷", url=f"https://t.me/Ridi_music_bot?startgroup=true")
+          InlineKeyboardButton("ＡＤＤ ＭＥ ＢＡＢＹ", url=f"https://t.me/Ridi_music_bot?startgroup=true")
         ],
         [
-          InlineKeyboardButton("🪐ＧＲＯＵＰ🪐", url="https://t.me/thala_elclassico_07"),
-          InlineKeyboardButton("⚡ＤＡＤＤＹ⚡", url="https://t.me/ll_destroyerrll"),
+          InlineKeyboardButton("ＧＲＯＵＰ", url="https://t.me/thala_elclassico_07"),
+          InlineKeyboardButton("ＤＥＳＴＲＯＹＥＲ", url="https://t.me/ll_destroyerr_ll"),
           ],
                [
-                InlineKeyboardButton("𝐓𝐄𝐑𝐈 𝐌𝐀𝐀 𝐊𝐈 𝐂𝐇𝐔𝐓"),
+                InlineKeyboardButton("ＡＶＥＮＧＥＲＳ ＮＥＴＷＯＲＫ", url=f"https://t.me/Avengers_net_work"),
+],
+[
+InlineKeyboardButton("ＲＩＤＩ ＭＵＳＩＣ ＢＯＴ", url=f"https://t.me/Ridi_music_bot"),
 
-],
-[
-              InlineKeyboardButton("𝐒𝐔𝐀𝐑𝐑𝐑"),
-              InlineKeyboardButton("︎𝐑𝐀𝐍𝐃𝐈𝐈𝐈"),
-              ],
-              [
-              InlineKeyboardButton("𝐆𝐀𝐍𝐃 𝐃𝐄"),
-InlineKeyboardButton("𝐋𝐀𝐔𝐑𝐄𝐄𝐄𝐄 "),
-],
-[
-InlineKeyboardButton("𝐁𝐄𝐇𝐀𝐍 𝐊𝐄 𝐋𝐔𝐍𝐃"),
-InlineKeyboardButton("𝐋𝐔𝐍𝐃 𝐋𝐄𝐋𝐄"),
-    ]]
+        ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
@@ -58,30 +44,4 @@ InlineKeyboardButton("𝐋𝐔𝐍𝐃 𝐋𝐄𝐋𝐄"),
         photo="https://telegra.ph/file/3093023b954815189d472.jpg",
         caption=start_txt,
         reply_markup=reply_markup
-    )
- 
-   
-# --------------
-
-
-@app.on_message(filters.command("repo", prefixes="."))
-@capture_err
-async def repo(_, message):
-    async with httpx.AsyncClient() as client:
-        response = await client.get("KHUD KA MAAALIK HU KHUD HU LAUREE 🤣")
-    
-    if response.status_code == 200:
-        users = response.json()
-        list_of_users = ""
-        count = 1
-        for user in users:
-            list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
-            count += 1
-
-        text = f"""[REPO LINK](@ll_destroyerr_ll ᴋᴏ ʙᴀᴀᴘ ʙᴏʟ ᴘʜʟᴇ 🌚| [𝖦𝖱𝖮𝖴𝖯](https://t.me/thala_elclassico_07)
-| 𝖢𝖮𝖭𝖳𝖱𝖨𝖡𝖴𝖳𝖮𝖱𝖲 |
-----------------
-{list_of_users}"""
-        await app.send_message(message.chat.id, text=text, disable_web_page_preview=True)
-    else:
-        await app.send_message(message.chat.id, text="Failed to fetch contributors.")
+ )
