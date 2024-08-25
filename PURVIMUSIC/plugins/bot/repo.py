@@ -24,17 +24,17 @@ start_txt = """
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("ＡＤＤ ＭＥ ＢＡＢＹ", url=f"https://t.me/Ridi_music_bot?startgroup=true")
+          InlineKeyboardButton("🌷𝐀𝐃𝐃 𝐌𝐄🌷", url=f"https://t.me/Ridi_music_bot?startgroup=true")
         ],
         [
-          InlineKeyboardButton("ＧＲＯＵＰ", url="https://t.me/thala_elclassico_07"),
-          InlineKeyboardButton("ＤＥＳＴＲＯＹＥＲ", url="https://t.me/ll_destroyerr_ll"),
+          InlineKeyboardButton("🪐𝐆𝐑𝐎𝐔𝐏🪐", url="https://t.me/thala_elclassico_07"),
+          InlineKeyboardButton("𓆩🇩𝙚𝙨𝙩𝙧𝙤𝙮𝙚𝙧𓆪", url="https://t.me/ll_destroyerr_ll"),
           ],
                [
-                InlineKeyboardButton("ＡＶＥＮＧＥＲＳ ＮＥＴＷＯＲＫ", url=f"https://t.me/Avengers_net_work"),
+                InlineKeyboardButton("⚡𝐀𝐕𝐄𝐍𝐆𝐄𝐑𝐒 𝐍𝐄𝐓𝐖𝐎𝐑𝐊⚡", url=f"https://t.me/Avengers_net_work"),
 ],
 [
-InlineKeyboardButton("ＲＩＤＩ ＭＵＳＩＣ ＢＯＴ", url=f"https://t.me/Ridi_music_bot"),
+InlineKeyboardButton("💕𝐑𝐈𝐃𝐈 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓💕", url=f"https://t.me/Ridi_music_bot"),
 
         ]]
     
