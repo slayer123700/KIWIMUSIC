@@ -10,7 +10,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <img src="https://readme-typing-svg.herokuapp.com?color=FF0085&width=620&lines=🍁+🚩+𝗣𝗢𝗪𝗘𝗥𝗘𝗗+𝗕𝗬+𝘿𝙀𝙎𝙏𝙍𝙊𝙔𝙀𝙍+🚩+🍁"></b></h3>
  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<h1 align="center"><b>𝐑𝐈𝐃𝐈 Mᴜsɪᴄ Bᴏᴛ</b></h1>
+<h1 align="center"><b>ʀɪᴅɪ Mᴜsɪᴄ Bᴏᴛ</b></h1>
 <p align="center"><a href="https://t.me/ll_destroyerr_ll"><img src="https://telegra.ph/file/17365df54ea493b54f62b.jpg" width="400"></a></p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
