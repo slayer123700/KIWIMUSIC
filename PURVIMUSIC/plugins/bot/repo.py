@@ -27,11 +27,11 @@ async def start(_, msg):
           InlineKeyboardButton("💥𝐀𝐃𝐃 𝐌𝐄☠️", url=f"https://t.me/DESTROYER_MUSIC_BOT?startgroup=true")
         ],
         [
-          InlineKeyboardButton("☠️𝐆𝐑𝐎𝐔𝐏⚡", url="https://t.me/PURVI_UPDATES"),
+          InlineKeyboardButton("☠️𝐆𝐑𝐎𝐔𝐏⚡", url="https://t.me/sanatani_support"),
           InlineKeyboardButton("𓆩🇩𝙚𝙨𝙩𝙧𝙤𝙮𝙚𝙧𓆪", url="https://t.me/ll_destroyerr_ll"),
           ],
                [
-                InlineKeyboardButton("⚡𝐓𝐄𝐀𝐌 𝐏𝐔𝐑𝐕𝐈 𝐁𝐎𝐓𝐒⚡", url=f"https://t.me/PURVI_SUPPORT"),
+                InlineKeyboardButton("⚡𝐓𝐄𝐍𝐒𝐈𝐎𝐍 𝐓𝐄𝐂𝐇⚡", url=f"https://t.me/tension_tech"),
 ],
 [
 InlineKeyboardButton("🕷𝐃𝐄𝐒𝐓𝐑𝐎𝐘𝐄𝐑 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓🕸", url=f"https://t.me/DESTROYER_MUSIC_BOT"),
