@@ -6,7 +6,7 @@ from pyrogram.errors import FloodWait
 
 from PURVIMUSIC import app
 from config import OWNER_ID
-from BrandrdXMusic.utils.database import (
+from PURVIMUSIC.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
