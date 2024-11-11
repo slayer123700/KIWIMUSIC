@@ -4,7 +4,7 @@ from pyrogram.errors import FloodWait
 from dotenv import load_dotenv
 import config
 from PURVIMUSIC.core.userbot import Userbot
-from PURVIMUSICimport app
+from PURVIMUSIC import app
 from datetime import datetime
 from PURVIMUSIC.utils.database import get_assistant
 
