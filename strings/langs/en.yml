@@ -177,10 +177,9 @@ stream_1 : "<b>❖  Sᴛᴀʀᴛᴇᴅ  Sᴛʀᴇᴀᴍɪɴɢ |</b>\n\n<b>❍ T�
 stream_2 : "<b>❖  Sᴛᴀʀᴛᴇᴅ  Sᴛʀᴇᴀᴍɪɴɢ |</b>\n\n<b>❍ Sᴛʀᴇᴀᴍ ᴛʏᴘᴇ :</b> ʟɪᴠᴇ sᴛʀᴇᴀᴍ [ᴜʀʟ]\n<b>❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {0}\n\n<b>❍ 𝖯ᴏᴡᴇʀᴇᴅ 𝖡ʏ » <a href=t.me/purvi_support>ᴘᴜʀᴠɪ-ᴍᴜ𝛅𝛊ᴄ™</a></b>"
 
 CLOSE_BUTTON  : "❍ 𝐂ʟᴏ𝐬ᴇ ❍"
-CLOSEMENU_BUTTON  : "❍ 𝐂ʟᴏ𝐬ᴇ ❍"
 BACK_BUTTON : "❍ 𝐁ᴀᴄᴋ ❍"
 NEXT_PAGE: ">"
-
+BACK_PAGE: "<"
 
 S_B_1 : "⛩️ ᴧᴅᴅ мᴇ ʙᴧʙʏ ⛩️"
 S_B_2 : "🍬 sᴜᴘᴘᴏꝛᴛ 🍬"
