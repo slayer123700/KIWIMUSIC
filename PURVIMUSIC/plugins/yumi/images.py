@@ -4,7 +4,7 @@ from re import findall
 from bing_image_downloader import downloader
 from pyrogram import Client, filters
 from pyrogram.types import InputMediaPhoto, Message
-from SONALI import app
+from PURVIMUSIC import app
 
 @app.on_message(filters.command(["img", "image"], prefixes=["/", "!"]))
 async def google_img_search(client: Client, message: Message):
@@ -33,12 +33,12 @@ async def google_img_search(client: Client, message: Message):
     except Exception as e:
         return await message.reply(f"❍ ᴇʀʀᴏʀ ɪɴ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ɪᴍᴀɢᴇs: {e}")
 
-    msg = await message.reply("❍ sᴏɴᴀʟɪ ғɪɴᴅɪɴɢ ɪᴍᴀɢᴇs.....")
+    msg = await message.reply("❍ 𝖯ᴜʀᴠɪ ғɪɴᴅɪɴɢ ɪᴍᴀɢᴇs.....")
 
     count = 0
     for img in lst:
         count += 1
-        await msg.edit(f"❍ sᴏɴᴀʟɪ ғɪɴᴅ {count} ɪᴍᴀɢᴇs.....")
+        await msg.edit(f"❍ 𝖯ᴜʀᴠɪ ғɪɴᴅ {count} ɪᴍᴀɢᴇs.....")
 
     try:
         await app.send_media_group(
