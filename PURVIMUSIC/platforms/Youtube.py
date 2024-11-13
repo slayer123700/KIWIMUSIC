@@ -11,8 +11,8 @@ from youtubesearchpython.__future__ import VideosSearch
 from yt_dlp import YoutubeDL
 
 import config
-from ERAVIBES.utils.database import is_on_off
-from ERAVIBES.utils.formatters import time_to_seconds
+from PURVIMUSIC.utils.database import is_on_off
+from PURVIMUSIC.utils.formatters import time_to_seconds
 
 def cookies():
     folder_path = f"{os.getcwd()}/cookies"
