@@ -27,7 +27,7 @@ qrcode
 pytz
 future==0.18.3
 search_engine_parser
-py-tgcalls==2.0.1
+py-tgcalls==0.9.7
 pykeyboard
 pyshorteners
 pyrogram==2.0.106
@@ -55,5 +55,3 @@ img2pdf
 cloudscraper
 pycryptodome
 opencv-python
-bing_image_downloader
-git+https://github.com/Vivekkumar-IN/yt-dlp-youtube-oauth2
