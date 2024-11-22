@@ -1,6 +1,5 @@
 from typing import Union
-from PURVIMUSIC import app
-from PURVIMUSIC.utils.formatters import time_to_seconds
+
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
@@ -72,6 +71,13 @@ def aq_markup(_, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
-    ]
+        [
+            InlineKeyboardButton(
+                text="𓆰𝅃꯭꯭᳚ 𝐓꯭꯭ʜ꯭꯭፝֠֩͠ᴜη꯭꯭ᴅ፝֠֩͠ᴇ꯭꯭ʀ ꯭꯭꯭꯭🔥꯭꯭ ", url=f"https://t.me/PURVI_SUPPORT"
+            ),
+            InlineKeyboardButton(
+                text="⎯꯭̽𓆩꯭〭〬𓏲⃝⃝꯭🦋 ꯭𝗖꯭ʀ꯭፝֠֩᷍ᴧᴢ꯭ʏ ꯭ 𝗪꯭ᴏʀ꯭ℓᴅ꯭᭄꯭⎯꯭꯭꯭̽🥂꯭༎꯭ 𓆪 ", url=f"https://t.me/CRAZY_OP_02"
+            ),
+        ],
+      ]
     return buttons
