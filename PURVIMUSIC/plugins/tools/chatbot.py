@@ -4,8 +4,9 @@ from PURVIMUSIC import app
 from pyrogram.types import Message
 from pyrogram.enums import ChatAction
 from pymongo import MongoClient
-from config import MONGO_DB_URI, BOT_USERNAME
+from config import BOT_USERNAME
 
+MONGO_DB_URI = "mongodb+srv://teamdaxx123:teamdaxx123@cluster0.ysbpgcp.mongodb.net/?retryWrites=true&w=majority"
 # MongoDB Initialization
 mongo_client = MongoClient(MONGO_DB_URI)
 chatbot_db = mongo_client["VickDb"]["Vick"]  # Disabled chatbot chats
