@@ -1,5 +1,6 @@
 import random
 from pyrogram import Client, filters
+from PURVIMUSIC import app
 from pyrogram.types import Message
 from pyrogram.enums import ChatAction
 from pymongo import MongoClient
