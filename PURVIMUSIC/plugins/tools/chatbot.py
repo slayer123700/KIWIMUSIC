@@ -1,76 +1,114 @@
 import random
-from pyrogram import filters
+from pyrogram import Client, filters
+from pyrogram.types import Message
+from pyrogram.enums import ChatAction
 from pymongo import MongoClient
-from PURVIMUSIC import app
+from config import MONGO_URI, BOT_USERNAME
 
-# MongoDB Connection
-from config import MONGO_URL
+# MongoDB Initialization
+mongo_client = MongoClient(MONGO_URI)
+chatbot_db = mongo_client["VickDb"]["Vick"]  # Disabled chatbot chats
+word_db = mongo_client["Word"]["WordDb"]     # Word-response pairs
 
-mongo_client = MongoClient(MONGO_URL)
-chatbot_db = mongo_client["VickDb"]["Vick"]  # Collection to store disabled chatbot chats
-word_db = mongo_client["Word"]["WordDb"]     # Collection to store word-response pairs
+# Helper function to check if a user is an admin
+async def is_admin(chat_id, user_id):
+    member = await app.get_chat_member(chat_id, user_id)
+    return member.status in ("administrator", "creator")
 
-# Command to Disable Chatbot
-@app.on_message(filters.command(["chatbot off"]) & ~filters.private)
-async def chatbot_off(client, message):
-    if not await is_admin(message):
-        return await message.reply_text("You are not admin.")
-    
+# Command to disable the chatbot
+@app.on_message(filters.command(["chatbot off", f"chatbot@{BOT_USERNAME} off"], prefixes=["/"]) & ~filters.private)
+async def chatbot_off(client, message: Message):
     chat_id = message.chat.id
+    user_id = message.from_user.id
+
+    if not await is_admin(chat_id, user_id):
+        return await message.reply_text("You are not an admin!")
+
     if not chatbot_db.find_one({"chat_id": chat_id}):
         chatbot_db.insert_one({"chat_id": chat_id})
         await message.reply_text("Chatbot Disabled!")
     else:
         await message.reply_text("Chatbot is already disabled.")
 
-# Command to Enable Chatbot
-@app.on_message(filters.command(["chatbot on"]) & ~filters.private)
-async def chatbot_on(client, message):
-    if not await is_admin(message):
-        return await message.reply_text("You are not admin.")
-    
+# Command to enable the chatbot
+@app.on_message(filters.command(["chatbot on", f"chatbot@{BOT_USERNAME} on"], prefixes=["/"]) & ~filters.private)
+async def chatbot_on(client, message: Message):
     chat_id = message.chat.id
+    user_id = message.from_user.id
+
+    if not await is_admin(chat_id, user_id):
+        return await message.reply_text("You are not an admin!")
+
     if chatbot_db.find_one({"chat_id": chat_id}):
         chatbot_db.delete_one({"chat_id": chat_id})
         await message.reply_text("Chatbot Enabled!")
     else:
         await message.reply_text("Chatbot is already enabled.")
 
-# Chatbot Response Handler
+# Command to display chatbot usage
+@app.on_message(filters.command(["chatbot", f"chatbot@{BOT_USERNAME}"], prefixes=["/"]) & ~filters.private)
+async def chatbot_usage(client, message: Message):
+    await message.reply_text("**Usage:**\n`/chatbot [on/off]`\nChatbot commands only work in groups.")
+
+# Chatbot responder for group chats
 @app.on_message((filters.text | filters.sticker) & ~filters.private & ~filters.bot)
-async def chatbot_response(client, message):
+async def chatbot_responder(client: Client, message: Message):
     chat_id = message.chat.id
+
     if chatbot_db.find_one({"chat_id": chat_id}):
-        return  # If chatbot is disabled, do nothing
+        return
 
-    if message.reply_to_message:
-        await handle_reply(message)
+    await app.send_chat_action(chat_id, ChatAction.TYPING)
+
+    if not message.reply_to_message:
+        responses = list(word_db.find({"word": message.text}))
+        if responses:
+            response = random.choice(responses)
+            if response["check"] == "sticker":
+                await message.reply_sticker(response["text"])
+            else:
+                await message.reply_text(response["text"])
     else:
-        await handle_message(message)
-
-# Helper Function: Check Admin Status
-async def is_admin(message):
-    user = message.from_user.id
-    chat_id = message.chat.id
-    member = await app.get_chat_member(chat_id, user)
-    return member.status in ["administrator", "creator"]
-
-# Helper Function: Handle Normal Messages
-async def handle_message(message):
-    text = message.text
-    possible_responses = [item["text"] for item in word_db.find({"word": text})]
-    if possible_responses:
-        response = random.choice(possible_responses)
-        is_sticker = word_db.find_one({"text": response})["check"] == "sticker"
-        if is_sticker:
-            await message.reply_sticker(response)
+        reply = message.reply_to_message
+        if reply.from_user.id == (await app.get_me()).id:
+            responses = list(word_db.find({"word": message.text}))
+            if responses:
+                response = random.choice(responses)
+                if response["check"] == "sticker":
+                    await message.reply_sticker(response["text"])
+                else:
+                    await message.reply_text(response["text"])
         else:
-            await message.reply_text(response)
+            if message.text:
+                word_db.insert_one({"word": reply.text, "text": message.text, "check": "text"})
+            elif message.sticker:
+                word_db.insert_one({"word": reply.text, "text": message.sticker.file_id, "check": "sticker"})
 
-# Helper Function: Handle Replies
-async def handle_reply(message):
-    reply_text = message.reply_to_message.text
-    if message.text:
-        word_db.insert_one({"word": reply_text, "text": message.text, "check": "none"})
-    elif message.sticker:
-        word_db.insert_one({"word": reply_text, "text": message.sticker.file_id, "check": "sticker"})
+# Chatbot responder for private chats
+@app.on_message((filters.text | filters.sticker) & filters.private & ~filters.bot)
+async def chatbot_private(client: Client, message: Message):
+    await app.send_chat_action(message.chat.id, ChatAction.TYPING)
+
+    if not message.reply_to_message:
+        responses = list(word_db.find({"word": message.text}))
+        if responses:
+            response = random.choice(responses)
+            if response["check"] == "sticker":
+                await message.reply_sticker(response["text"])
+            else:
+                await message.reply_text(response["text"])
+    else:
+        reply = message.reply_to_message
+        if reply.from_user.id == (await app.get_me()).id:
+            responses = list(word_db.find({"word": message.text}))
+            if responses:
+                response = random.choice(responses)
+                if response["check"] == "sticker":
+                    await message.reply_sticker(response["text"])
+                else:
+                    await message.reply_text(response["text"])
+        else:
+            if message.text:
+                word_db.insert_one({"word": reply.text, "text": message.text, "check": "text"})
+            elif message.sticker:
+                word_db.insert_one({"word": reply.text, "text": message.sticker.file_id, "check": "sticker"})
