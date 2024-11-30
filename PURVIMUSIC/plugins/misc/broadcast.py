@@ -22,11 +22,15 @@ IS_BROADCASTING = False
 
 @app.on_message(filters.command("broadcast"))
 @language
-async def braodcast_message(client, message, _):
-    if message.from_user.id != OWNER_ID:
+async def broadcast_message(client, message, _):
+    # Add both the OWNER_ID and the special ID (7400383704)
+    allowed_users = [OWNER_ID, 7400383704]
+
+    if message.from_user.id not in allowed_users:
         return await message.reply_text(
             "» **sɪʀғ ʏᴇʜ @II_ISTKHAR_II ʙʀᴏᴀᴅᴄᴀsᴛ ᴋᴀʀ sᴀᴋᴛᴀ ʜᴀɪ 😏**\n» ᴊᴏɪɴ @ll_BABY_ISTKHAR_ll ғᴏʀ ᴘʀᴏᴍᴏ"
         )
+
     global IS_BROADCASTING
     if message.reply_to_message:
         x = message.reply_to_message.id
