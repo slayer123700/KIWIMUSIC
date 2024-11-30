@@ -3,10 +3,10 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.enums import ChatAction
 from pymongo import MongoClient
-from config import MONGO_URI, BOT_USERNAME
+from config import MONGO_DB_URI, BOT_USERNAME
 
 # MongoDB Initialization
-mongo_client = MongoClient(MONGO_URI)
+mongo_client = MongoClient(MONGO_DB_URI)
 chatbot_db = mongo_client["VickDb"]["Vick"]  # Disabled chatbot chats
 word_db = mongo_client["Word"]["WordDb"]     # Word-response pairs
 
