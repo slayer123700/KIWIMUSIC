@@ -2,7 +2,7 @@ import asyncio
 
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-OWNERS = "7445883361"
+OWNERS = "7520092354"
 from PURVIMUSIC import app
 from PURVIMUSIC.utils.database import add_served_chat, get_assistant
 
@@ -12,7 +12,7 @@ async def add_allbot(client, message):
     command_parts = message.text.split(" ")
     if len(command_parts) != 2:
         await message.reply(
-            "**❍ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @land_music_bot`**"
+            "**❍ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @zoyumusicbot`**"
         )
         return
 
