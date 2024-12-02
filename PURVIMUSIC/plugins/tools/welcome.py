@@ -93,13 +93,14 @@ async def greet_new_member(_, member: ChatMemberUpdated):
         welcome_message = f"**👋 {user.mention}, Wᴇʟᴄᴏᴍᴇ Tᴏ {member.chat.title}!\n\n" \
                           "• I Hᴏᴘᴇ Yᴏᴜ Aʀᴇ Fɪɴᴇ!\n\n" \
                           "• Pʟᴇᴀsᴇ Aʟᴡᴀʏs Fᴏʟʟᴏᴡ Tʜᴇ Gʀᴏᴜᴘ Rᴜʟᴇs!\n" \
+                          "• Fʀᴇᴇ Pʀᴏᴍᴏᴛɪᴏɴ Dᴍ @Link_zonebot!\n" \
                           "────────────────────\n" \
                           f"ᴛ ᴏ ᴛ ᴀ ʟ ᴍ ᴇ ᴍ ʙ ᴇ ʀ: {count}\n" \
                           "────────────────────**"
         
         # Creating an inline button to "Join 👋" with the link
         keyboard = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Join 👋", url="https://t.me/CRAZY_OP_02")]]
+            [[InlineKeyboardButton("Join 👋", url="https://t.me/The_incricible")]]
         )
 
         # Send the welcome message with the inline button
