@@ -14,9 +14,9 @@ API_HASH = getenv("API_HASH")
 # ------------------------------------------------------
 BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","Legend_mickey")
+OWNER_USERNAME = getenv("OWNER_USERNAME","slayer1237")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME","XDz_MUSIC_BOT")
+BOT_USERNAME = getenv("BOT_USERNAME","MISA_AMANExMUSIC_probot")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME")
 # ---------------------------------------------------------
@@ -35,10 +35,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", -1002134214481))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002046320443))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", 7520092354))
+OWNER_ID = int(getenv("OWNER_ID", 6018803920))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
@@ -67,8 +67,8 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/THE_INCRICIBLE")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ZOYU_SUPPORT")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/THE_MAHABHARAT_NETWORK")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ludo_club_night")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
